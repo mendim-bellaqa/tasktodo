@@ -1,5 +1,9 @@
 :root {
+<<<<<<< HEAD
           --primary: #3A82EE;
+=======
+          --primary: #EA40A4;
+>>>>>>> 90aace1 (This is a new commit for what I originally planned to be amended)
           --business: #3A82EE;
           --personal: var(--primary);
           --light: #EEE;
@@ -9,8 +13,13 @@
 
           --shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
 
+<<<<<<< HEAD
           --business-glow: 0px 0px 4px rgba(7, 106, 255, 0.75);
           --personal-glow: 0px 0px 4px rgba(17, 255, 0, 0.75);
+=======
+          --business-glow: 0px 0px 4px rgba(58, 130, 238, 0.75);
+          --personal-glow: 0px 0px 4px rgba(234, 64, 164, 0.75);
+>>>>>>> 90aace1 (This is a new commit for what I originally planned to be amended)
 }
 
 * {
