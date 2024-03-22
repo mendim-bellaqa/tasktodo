@@ -7,8 +7,8 @@ const name = ref('')
 const input_content = ref('')
 const input_category = ref(null)
 
-const todos_asc = computed(() => todos.value.sort((a,b) =>{
-	return a.createdAt - b.createdAt
+const todos_desc = computed(() => todos.value.sort((a,b) =>{
+	return b.createdAt - a.createdAt
 }))
 
 watch(name, (newVal) => {
@@ -101,7 +101,7 @@ onMounted(() => {
 			<h3>TODO LIST</h3>
 			<div class="list" id="todo-list">
 
-				<div v-for="todo in todos_asc" :class="`todo-item ${todo.done && 'done'}`">
+				<div v-for="todo in todos_desc" :class="`todo-item ${todo.done && 'done'}`">
 					<label>
 						<input type="checkbox" v-model="todo.done" />
 						<span :class="`bubble ${
